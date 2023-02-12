@@ -62,36 +62,36 @@ class _First_exampleState extends State<First_example> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                            const  Text(
                                 'Title',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(
+                             const SizedBox(
                                 height: 3,
                               ),
                               Text(postList[index].title.toString()),
-                              SizedBox(
+                             const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                             const Text(
                                 'Description',
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(
+                            const  SizedBox(
                                 height: 3,
                               ),
                               Text(
                                 'Description\n' +
                                     postList[index].body.toString(),
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodySmall,
                               ),
-                              Text('Id is'),
+                             const Text('Id is'),
                               Text(postList[index].userId.toString() +
                                   postList[index].id.toString())
                             ],
